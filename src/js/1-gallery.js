@@ -1,4 +1,5 @@
 import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const images = [
   {
@@ -66,12 +67,13 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const galleryContainer = document.querySelector(".gallery");
 const fragment = document.createDocumentFragment();
 
 images.forEach(({ preview, original, description }) => {
   const galleryItem = document.createElement('li');
   galleryItem.classList.add('gallery-item');
+
   const link = document.createElement("a");
   link.classList.add("gallery-link");
   link.href = original;
@@ -82,10 +84,15 @@ images.forEach(({ preview, original, description }) => {
   picture.alt = description;
   picture.width = 360;
 
-  galleryItem.append(link)
   link.append(picture);
+  galleryItem.append(link);
   fragment.append(galleryItem);
 });
 
-gallery.append(fragment);
+galleryContainer.append(fragment);
+
+let gallery = new SimpleLightbox('.gallery a', {
+  captionsData: "alt",
+  captionDelay: 250,
+});
 
