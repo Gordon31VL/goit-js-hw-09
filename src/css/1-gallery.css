@@ -28,21 +28,3 @@ li {
 .basicLightbox__placeholder {
     cursor: pointer;
 }
-
-.back{
-  color: currentColor;
-  text-decoration: none;
-  display: flex;
-  font-size: 24px;
-  padding: 8px;
-  border-radius: 16px;
-  justify-content: center;
-  color: black;
-  transition: scale 300ms;
-  position: absolute;
-}
-
-.back:hover{
-  scale: 1.2;
-  transition: scale 300ms;
-}
