@@ -28,3 +28,28 @@ li {
 .basicLightbox__placeholder {
     cursor: pointer;
 }
+
+.back{
+  color: currentColor;
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 16px;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: scale 300ms;
+  width: 20px;
+
+}
+
+svg{
+  width: 20px;
+  height: 20px;
+
+}
+
+.back:hover{
+  scale: 1.2;
+  transition: scale 300ms;
+}

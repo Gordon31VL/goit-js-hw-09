@@ -1,0 +1,87 @@
+body {
+  font-family: Montserrat, sans-serif;
+  color: #2e2f42;
+}
+
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+input,
+textarea {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 40px;
+  width: 360px;
+  padding: 8px 16px;
+  border: solid 1px #808080;
+  border-radius: 4px;
+}
+
+textarea {
+  margin-bottom: 0;
+  font-family: Montserrat, sans-serif;
+  height: 80px;
+}
+input:hover,
+textarea:hover {
+  border-color: #000000;
+}
+
+input:active,
+textarea:hover {
+  border-color: #808080;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #ffffff;
+  font-weight: 500px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+.back {
+  color: currentColor;
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 16px;
+  justify-content: center;
+  color: #ffffff;
+  transition: scale 300ms;
+  width: 20px;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
+
+.back:hover {
+  scale: 1.2;
+  transition: scale 300ms;
+}
