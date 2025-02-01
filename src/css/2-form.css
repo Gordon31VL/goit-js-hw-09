@@ -62,3 +62,21 @@ button {
 button:hover {
   background-color: #6c8cff;
 }
+
+.back {
+  display: block;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 16px;
+  color: black;
+  transition: scale 300ms;
+  margin-bottom: 16px;
+  width: 40px;
+}
+
+.back:hover {
+  scale: 1.2;
+  transition: scale 300ms;
+}
